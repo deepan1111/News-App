@@ -1,15 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+ 
 
 }
 
 
-
 .title {
-
+    font-family: 'Playfair Display', serif;
     padding: 10px;
     text-align: center;
+    font-weight: bolder;
 }
 
 .route {
@@ -33,6 +34,11 @@
     margin-top: 70px;
 }
 
+.rg-title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
 .rg-form {
     display: flex;
     align-items: center;
@@ -48,6 +54,7 @@
 
 .rg-inp1,.rg-inp2 {
     margin: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .rg-btn {
@@ -62,6 +69,8 @@
 .rg-que {
     padding-top: 20px;
     display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -69,6 +78,12 @@
 
 .log-section {
     margin-top: 70px;
+}
+
+.log-title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
 }
 
 .log-form {
@@ -86,6 +101,7 @@
 
 .log-inp1, .log-inp2{
     margin: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .log-btn {
@@ -94,9 +110,27 @@
     width: 100%;
     justify-content: center;
     margin-left: 10px;
+
 }
 
 .log-que {
     padding-top: 20px;
     display: flex;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+/* home */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hm-title {
+    margin: 10px;
+}
+
+.logout-btn {
+    margin: 20px;
 }
