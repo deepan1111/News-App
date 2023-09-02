@@ -4,11 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.15",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
@@ -17,6 +18,11 @@
     "mongoose": "^7.5.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^8.0.0"
+    "passport-local-mongoose": "^8.0.0",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }

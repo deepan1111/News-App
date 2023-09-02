@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.title {
+
+    padding: 10px;
+    text-align: center;
+}
+
+.route {
+    display: flex;
+    justify-content: center;
+    padding-top: 190px;
+}
+
+.route a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+/* register */
+
+.rg-section {
+    margin-top: 70px;
+}
+
+.rg-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.rg-inp1,.rg-inp2 {
+    margin: 10px;
+}
+
+.rg-btn {
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 10px;
+
+}
+
+.rg-que {
+    padding-top: 20px;
+    display: flex;
+}
+
+
+/* login */
+
+.log-section {
+    margin-top: 70px;
+}
+
+.log-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.log-inp1, .log-inp2{
+    margin: 10px;
+}
+
+.log-btn {
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.log-que {
+    padding-top: 20px;
+    display: flex;
+}

@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
-<body>
+<%- include("./partials/header.ejs") -%>
+<section class="rg-section">
     <div class="title">
         <h1>Register</h1>
     </div>
-    <form action="/register" method="post">
-        <input type="email" name="username" placeholder="Email">
-        <input type="password" name="password" placeholder="password">
-        <button type="submit">Register</button>
-    </form>
-    <div>
-        <p>Already I Have An Account..</p><a href="/login">Login</a>
+    <div class="rg-form">
+        <form class="register-form" action="/register" method="post">
+            <input class="rg-inp1 form-control form-control-lg" type="email" name="username" placeholder="Email">
+            <input class="rg-inp2 form-control form-control-lg" type="password" name="password" placeholder="password">
+            <button class="rg-btn btn btn-dark" type="submit">Register</button>
+        </form>
+        <div class="rg-que">
+            <p>Already I Have An Account.....</p><a href="/login">Login</a>
+        </div>
     </div>
-</body>
-</html>
+</section>
+    
+    
+<%- include("./partials/footer.ejs") -%>

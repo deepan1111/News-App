@@ -9,6 +9,7 @@ const session = require("express-session");
 const passport = require("passport");
 const passwordLocalMongoose = require("passport-local-mongoose")
 
+app.use("/public",express.static('public'))
 app.use(session({
     secret: 'keyboard cat',
     resave: false,
@@ -77,6 +78,8 @@ app.post("/register",(req,res)=>{
 
 
 })
+
+
 
 
 app.post("/login",(req,res)=>{
