@@ -125,6 +125,7 @@
 .nav {
     display: flex;
     justify-content: space-between;
+
 }
 
 .hm-title {
@@ -133,4 +134,21 @@
 
 .logout-btn {
     margin: 20px;
+}
+
+.search-er {
+    padding: 5px;
+}
+
+.search-btn {
+    margin-bottom: 2px;
+}
+
+.profile-icon {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.nav-er a {
+    color: #1E3050;
 }

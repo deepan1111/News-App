@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
@@ -8,6 +9,8 @@ app.use(bodyParser.urlencoded({extended:true}))
 const session = require("express-session");
 const passport = require("passport");
 const passwordLocalMongoose = require("passport-local-mongoose")
+const PORT = process.env.PORT
+
 
 app.use("/public",express.static('public'))
 app.use(session({
@@ -19,7 +22,7 @@ app.use(session({
 
 app.use(passport.initialize())
 app.use(passport.session())
-mongoose.connect("mongodb://127.0.0.1:27017/newsDB")
+mongoose.connect(process.env.MONGO_URI)
 
 
 const userSchema = new mongoose.Schema({
@@ -57,6 +60,11 @@ app.get("/home",(req,res)=>{
     } else {
         res.redirect("/login")
     }
+   
+})
+
+app.get("/profile",(req,res)=>{
+    res.render("profile")
 })
 
 
@@ -108,7 +116,8 @@ app.post("/login",(req,res)=>{
 
 
 
-app.listen(3000,()=>{
+
+app.listen(PORT,()=>{
     console.log("Server started at port 3000");
 })
 
